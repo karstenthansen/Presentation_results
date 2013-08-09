@@ -63,5 +63,9 @@ This slide has two columns
 ```{r make.ggpl.household.age.medicine, fig.keep='none', cache=F}
 ```
 
+---
+### Google Line Chart
+```{r tmp.F,  cache=F}
+```
 
 
