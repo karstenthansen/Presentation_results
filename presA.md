@@ -45,176 +45,12 @@ This slide has two columns
 
 ---
 ### Model
-<!-- MotionChart generated in R 3.0.1 by googleVis 0.4.3 package -->
-<!-- Fri Aug 09 10:09:17 2013 -->
 
-
-<!-- jsHeader -->
-<script type="text/javascript">
- 
-// jsData 
-function gvisDataMotionChartID24d01a481964 () {
-  var data = new google.visualization.DataTable();
-  var datajson =
-[
- [
- "Apples",
-2008,
-"West",
-98,
-78,
-20,
-"2008-12-31" 
-],
-[
- "Apples",
-2009,
-"West",
-111,
-79,
-32,
-"2009-12-31" 
-],
-[
- "Apples",
-2010,
-"West",
-89,
-76,
-13,
-"2010-12-31" 
-],
-[
- "Oranges",
-2008,
-"East",
-96,
-81,
-15,
-"2008-12-31" 
-],
-[
- "Bananas",
-2008,
-"East",
-85,
-76,
-9,
-"2008-12-31" 
-],
-[
- "Oranges",
-2009,
-"East",
-93,
-80,
-13,
-"2009-12-31" 
-],
-[
- "Bananas",
-2009,
-"East",
-94,
-78,
-16,
-"2009-12-31" 
-],
-[
- "Oranges",
-2010,
-"East",
-98,
-91,
-7,
-"2010-12-31" 
-],
-[
- "Bananas",
-2010,
-"East",
-81,
-71,
-10,
-"2010-12-31" 
-] 
-];
-data.addColumn('string','Fruit');
-data.addColumn('number','Year');
-data.addColumn('string','Location');
-data.addColumn('number','Sales');
-data.addColumn('number','Expenses');
-data.addColumn('number','Profit');
-data.addColumn('string','Date');
-data.addRows(datajson);
-return(data);
-}
- 
-// jsDrawChart
-function drawChartMotionChartID24d01a481964() {
-  var data = gvisDataMotionChartID24d01a481964();
-  var options = {};
-options["width"] =    550;
-options["height"] =    450;
-
-     var chart = new google.visualization.MotionChart(
-       document.getElementById('MotionChartID24d01a481964')
-     );
-     chart.draw(data,options);
-    
-
-}
-  
- 
-// jsDisplayChart
-(function() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  var chartid = "motionchart";
-
-  // Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
-  var i, newPackage = true;
-  for (i = 0; newPackage && i < pkgs.length; i++) {
-    if (pkgs[i] === chartid)
-      newPackage = false;
-  }
-  if (newPackage)
-    pkgs.push(chartid);
-
-  // Add the drawChart function to the global list of callbacks
-  callbacks.push(drawChartMotionChartID24d01a481964);
-})();
-function displayChartMotionChartID24d01a481964() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  window.clearTimeout(window.__gvisLoad);
-  // The timeout is set to 100 because otherwise the container div we are
-  // targeting might not be part of the document yet
-  window.__gvisLoad = setTimeout(function() {
-    var pkgCount = pkgs.length;
-    google.load("visualization", "1", { packages:pkgs, callback: function() {
-      if (pkgCount != pkgs.length) {
-        // Race condition where another setTimeout call snuck in after us; if
-        // that call added a package, we must not shift its callback
-        return;
-      }
-      while (callbacks.length > 0)
-        callbacks.shift()();
-    } });
-  }, 100);
-}
- 
-// jsFooter
- </script>
- 
-<!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID24d01a481964"></script>
- 
-<!-- divChart -->
-  
-<div id="MotionChartID24d01a481964"
-  style="width: 550px; height: 450px;">
-</div>
+```
+Error: chart1 is not a valid option. Set tag to NULL or one of the
+following: type, chartid, html, header, chart, jsHeader, jsData,
+jsDrawChart, jsDisplayChart, jsFooter, jsChart, divChart, caption, footer
+```
 
 
 
@@ -224,7 +60,7 @@ function displayChartMotionChartID24d01a481964() {
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="528px" viewBox="0 0 960 528" version="1.1">
   <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.3-0" time="2013-08-09 10:09:22"/>
+    <gridsvg:generator name="gridSVG" version="1.3-0" time="2013-08-09 10:14:02"/>
     <gridsvg:argument name="name" value="erase_me.svg"/>
     <gridsvg:argument name="exportCoords" value="none"/>
     <gridsvg:argument name="exportMappings" value="none"/>
@@ -1081,119 +917,12 @@ function displayChartMotionChartID24d01a481964() {
 
 ---
 ### Google Line Chart
-<!-- LineChart generated in R 3.0.1 by googleVis 0.4.3 package -->
-<!-- Fri Aug 09 10:09:23 2013 -->
 
-
-<!-- jsHeader -->
-<script type="text/javascript">
- 
-// jsData 
-function gvisDataLineChartID24d06acc1644 () {
-  var data = new google.visualization.DataTable();
-  var datajson =
-[
- [
- "US",
-10,
-23 
-],
-[
- "GB",
-13,
-12 
-],
-[
- "BR",
-14,
-32 
-] 
-];
-data.addColumn('string','country');
-data.addColumn('number','val1');
-data.addColumn('number','val2');
-data.addRows(datajson);
-return(data);
-}
- 
-// jsDrawChart
-function drawChartLineChartID24d06acc1644() {
-  var data = gvisDataLineChartID24d06acc1644();
-  var options = {};
-options["allowHtml"] = true;
-options["title"] = "Hello World";
-options["titleTextStyle"] = {color:'red', 
-                                           fontName:'Courier', 
-                                           fontSize:16};
-options["backgroundColor"] = "#D3D3D3";
-options["vAxis"] = {gridlines:{color:'red', count:3}};
-options["hAxis"] = {title:'Country', titleTextStyle:{color:'blue'}};
-options["series"] = [{color:'green', targetAxisIndex: 0}, 
-                                   {color: 'orange',targetAxisIndex:1}];
-options["vAxes"] = [{title:'val1'}, {title:'val2'}];
-options["legend"] = "bottom";
-options["curveType"] = "function";
-options["width"] =    500;
-options["height"] =    300;
-
-     var chart = new google.visualization.LineChart(
-       document.getElementById('LineChartID24d06acc1644')
-     );
-     chart.draw(data,options);
-    
-
-}
-  
- 
-// jsDisplayChart
-(function() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  var chartid = "corechart";
-
-  // Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
-  var i, newPackage = true;
-  for (i = 0; newPackage && i < pkgs.length; i++) {
-    if (pkgs[i] === chartid)
-      newPackage = false;
-  }
-  if (newPackage)
-    pkgs.push(chartid);
-
-  // Add the drawChart function to the global list of callbacks
-  callbacks.push(drawChartLineChartID24d06acc1644);
-})();
-function displayChartLineChartID24d06acc1644() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  window.clearTimeout(window.__gvisLoad);
-  // The timeout is set to 100 because otherwise the container div we are
-  // targeting might not be part of the document yet
-  window.__gvisLoad = setTimeout(function() {
-    var pkgCount = pkgs.length;
-    google.load("visualization", "1", { packages:pkgs, callback: function() {
-      if (pkgCount != pkgs.length) {
-        // Race condition where another setTimeout call snuck in after us; if
-        // that call added a package, we must not shift its callback
-        return;
-      }
-      while (callbacks.length > 0)
-        callbacks.shift()();
-    } });
-  }, 100);
-}
- 
-// jsFooter
- </script>
- 
-<!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartLineChartID24d06acc1644"></script>
- 
-<!-- divChart -->
-  
-<div id="LineChartID24d06acc1644"
-  style="width: 500px; height: 300px;">
-</div>
+```
+Error: chart2 is not a valid option. Set tag to NULL or one of the
+following: type, chartid, html, header, chart, jsHeader, jsData,
+jsDrawChart, jsDisplayChart, jsFooter, jsChart, divChart, caption, footer
+```
 
 
 
