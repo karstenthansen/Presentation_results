@@ -1,0 +1,67 @@
+---
+title       : Aging and Private Label Use
+subtitle    : Results 
+author      : Karsten T. Hansen, Romana Khan and Vishal Singh
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : prettify  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+ext_widgets     : {rCharts: ["libraries/highcharts", "libraries/nvd3", "libraries/morris", "libraries/dimple", "libraries/Rickshaw"]}           
+widgets     : mathjax    #{quiz, bootstrap}
+mode        : selfcontained # {standalone, draft,selfcontained}
+---
+
+```{r set.global.options, echo=FALSE, cache=FALSE, message=FALSE}
+knitr::opts_chunk$set(comment = NA, echo=F, results = 'asis', tidy = F, message = F)
+library(gridSVG)
+library(ggplot2)
+library(googleVis)
+```
+
+```{r external.code, echo=FALSE}
+chunk.dir <- 'D:\\research\\pl\\pl\\chunks\\'
+read_chunk(paste(chunk.dir,"chunks_B.R",sep=""))
+read_chunk(paste(chunk.dir,"chunks_presentation.R",sep=""))
+```
+
+```{r functions.for.presentation}
+```
+
+```{r load.libraries, echo=FALSE, cache=F, message=FALSE}
+```
+
+```{r load.mcmc.run, echo=FALSE, cache=F}
+```
+
+```{r read.effects, echo=FALSE, cache=F}
+```
+
+--- &twocol w1:10% w2:90%
+
+### Two Column Layout   
+
+This slide has two columns
+
+*** left
+- point 1
+- point 2
+- point 3
+
+*** right
+- tst
+
+---
+### Model
+```{r tmp.E,  cache=F}
+```
+
+
+---
+### Age Effects
+
+
+```{r make.ggpl.household.age.medicine, fig.keep='none', cache=F}
+```
+
+
+
